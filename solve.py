@@ -5,9 +5,6 @@ from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from sklearn.pipeline import Pipeline
 from sklearn.linear_model import LinearRegression, Ridge, Lasso, ElasticNet
 from sklearn.model_selection import cross_validate, KFold
-import warnings
-
-warnings.filterwarnings('ignore')
 
 def process_variant(train_file, test_file, variant_name, degrees):
     print(f"\nProcessing {variant_name}...")
